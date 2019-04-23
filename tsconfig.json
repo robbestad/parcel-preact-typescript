@@ -1,0 +1,30 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"noImplicitAny": false,
+		"baseUrl": ".",
+        "checkJs": true,
+		"strictNullChecks": false,
+		"esModuleInterop": true,
+		"experimentalDecorators": true,
+		"jsx": "react",
+		"jsxFactory": "h",
+		"module": "commonjs",
+		"outDir": "dist",
+		"paths": {
+			"~*": ["./src/*"]
+		},
+        "pretty": true,
+        "removeComments": true,
+		"strict": true,
+		"target": "esnext",
+		"typeRoots" : ["./node_modules/@types"]
+	},
+	"include": [
+		"src/**/*"
+	],
+	"parcelTsPluginOptions": {
+		"transpileOnly": false
+    }
+}

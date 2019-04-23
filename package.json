@@ -1,0 +1,46 @@
+{
+  "name": "parcel-preact-typescript",
+  "version": "0.1.0",
+  "description": "parcel preact typescript",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "watch": "parcel watch index.html",
+    "build": "parcel build index.html",
+    "rebuild": "npm run clean && npm run build",
+    "clean": "rimraf dist/ && rimraf .cache",
+    "size": "npm run build && size-limit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svenanders/parcel-preact-typescript.git"
+  },
+  "size-limit": [
+    {
+      "webpack": false,
+      "limit": "500 ms",
+      "path": "dist/src*.js"
+    }
+  ],
+  "keywords": [
+    "parcel",
+    "preact",
+    "typescript",
+    "boilerplate",
+    "project"
+  ],
+  "author": "svenanders",
+  "license": "MIT",
+  "dependencies": {
+    "preact": "^10.0.0-alpha.4",
+    "storeon": "^0.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@types/node": "^11.13.7",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^2.6.3",
+    "size-limit": "^1.1.2",
+    "typescript": "^3.4.4"
+  }
+}
